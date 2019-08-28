@@ -7,10 +7,9 @@ including RPG like stats for a text game.
 Of course, this game needs to have magic in it.
 So here we go.
 '''
-import time
 
 status = {
-'Name':'Hero'
+'name':'Hero'
 ,'Class':'None'
 ,'LVL': 1
 ,'HP':100
@@ -28,6 +27,25 @@ status = {
 ,'ATR':0
 }
 
+def rstatus():
+	print("================Status======================")
+	print("| Name: " + str(status['name']))
+	print("| Class: " + str(status['Class']))
+	print("| LVL: " + str(status['LVL']))
+	print("| EXP: " + str(status['EXP'])+"/"+str(status['NLV']))
+	print("|  HP: " + str(status['HP']))
+	print("|  MP: " + str(status['MP']))
+	print("|  ST: " + str(status['ST']))
+	print("============================================")
+
+'''
+rstatus()
+'''
+
+
+
+
+'''
 print("Welcome, adventurer!")
 time.sleep(1)
 print("I am Kagemoto, the god of this realm.")
@@ -57,5 +75,5 @@ while ans != "y":
 		print("Your adventure has only just begun!")
 	else:
 		print("Aha, I see, I was mistaken then.")
-
+'''
 
